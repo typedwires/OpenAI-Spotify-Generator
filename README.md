@@ -2,7 +2,12 @@
 
 Project based on Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4.
 
-This will be filled out further.
+<b>Creating your Spotify Web API to obtain Spotify Client ID and Client Secret keys</b>
 
-To make the code more robust, I would add code that addresses error handling. 
+Follow the instructions here: https://developer.spotify.com/documentation/web-api
 
+<b>Finding your OpenAI secret keys</b>
+
+Read the instructions here: https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key
+
+More to come.
