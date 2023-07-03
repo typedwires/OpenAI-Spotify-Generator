@@ -1,4 +1,4 @@
-<b>GPT-3.5-turbo AI Spotify Playlist Generator</b>
+<b> <h1> GPT-3.5-turbo AI Spotify Playlist Generator </h1> </b>
 
 <img src="https://github.com/typedwires/OpenAI-Spotify-Generator/blob/main/playlist.png" width="800">
 
@@ -32,7 +32,7 @@ SPOTIFY CLIENT ID <br>
 SPOTIFY CLIENT SECRET <br>
 OPENAI API KEY <br>
 
-in the following format in your.env file:
+in the following format in your .env file:
 
 ```
 SPOTIFY_CLIENT_ID = <key>
