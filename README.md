@@ -18,7 +18,7 @@ Where ```-p``` represents the prompt and playlist title, and ``-n`` denotes the 
 
 Follow the instructions here: https://developer.spotify.com/documentation/web-api
 
-Inside your Spotify WEB API set your ```Website``` and ``Redirect URIs`` both to```http://localhost:9999```
+Also, inside your Spotify WEB API set your ```Website``` and ``Redirect URIs`` both to```http://localhost:9999```
 
 <b>Finding your OpenAI secret keys</b>
 
