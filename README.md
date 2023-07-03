@@ -121,5 +121,17 @@ OpenAI's api will return the output in the following JSON format (in code this t
     "total_tokens": 299
   }
 }
+````
+
+Based on the above format we write
+
+```python
+playlist = json.loads(response["choices"][0]["message"]["content"])
 ```
+which prints in the following format:
+
+```
+[{'song': "I Will Always Love You", 'artist': 'Whitney Houston'}]
+```
+
 More to come.
