@@ -1,6 +1,6 @@
 <b>GPT-3.5-turbo AI Spotify Playlist Generator</b>
 
-![Spotify Playlist](https://github.com/typedwires/OpenAI-Spotify-Generator/blob/main/playlist.png)
+<img src="https://github.com/typedwires/OpenAI-Spotify-Generator/blob/main/playlist.png" width="800">
 
 Project based on Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4.
 
