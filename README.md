@@ -12,7 +12,7 @@ Once the project is set up (see instructions below) in the command line, nagivat
 python app.py -p "90s and early 2000s rock love songs" -n 10
 ```
 
-Where ```-p``` represents the prompt or playlist title, and ``-n`` denotes the number of songs to generate.
+Where ```-p``` represents the prompt and playlist title, and ``-n`` denotes the number of songs to generate.
 
 <b>Creating your Spotify Web API to obtain Spotify Client ID and Client Secret keys</b>
 
