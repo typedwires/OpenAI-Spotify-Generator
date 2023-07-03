@@ -38,7 +38,7 @@ We use the Spotify Python library for the Spotify Web API. For detailed usage in
 
 We use the python-dotenv package to handle the API keys read as key-value pairs in our .env file. For further understanding and instructions on using python-dotenv, please refer to the official documentation available at the following link: https://pypi.org/project/python-dotenv/
 
-In the code you will use dictionaries to insert the code in the lines below:
+In the code you will use dictionaries to manage our keys in the lines below:
 
 ```python
 sp = spotipy.Spotify( 
@@ -49,5 +49,65 @@ sp = spotipy.Spotify(
         scope="playlist-modify-private" 
     ) 
 )
+```
+
+<b>Example output based our messages prompt</b>
+
+Based on the code below:
+
+```python
+
+    example_json = """[
+    {"song": "Around the World", "artist":"Daft Punk"},
+    {"song": "I Feel Love", "artist": "Donna Summer"},
+    {"song": "Blue Monday", "artist": "New Order"},
+    {"song": "Windowlicker", "artist": "Aphex Twin"},
+    {"song": "Pump Up the Jam", "artist": "Technotronic"},
+    {"song": "Born Slippy", "artist": "Underworld"},
+    {"song": "Insomnia", "artist": "Faithless"},
+    {"song": "The Man with the Red Face", "artist": "Laurent Garnier"},
+    ]"""
+
+    messages = [
+        {"role": "system", "content": """You are a helpful playlist generating assistant.
+        You should generate a list of songs and their artist according to the text prompt.
+        You should return a JSON array, where each element follows this format: {"song": <song_title>, "artist": <artist_ name>}
+        Do not include any other text. Do not include comments like 'Here is a playlist of breakup songs:
+    '. Or 'Enjoy listening to these breakup songs!'. Do not give extra text. """
+        },
+        {"role": "user", "content": f"Generate a playlist of {count} songs based on the following prompt: {prompt}"},
+        {"role": "assistant", "content": example_json}
+    ]
+
+    response = openai.ChatCompletion.create(
+        messages=messages,
+        model="gpt-3.5-turbo",
+        max_tokens=400)
+```
+
+OpenAI's api will return the output in the following JSON format (in code this the resulr of printing our ```response``` variable).
+
+```json
+{
+  "id": "chatcmpl-7YFMhW937uZ5xNTAnlTperMxnH8uk",
+  "object": "chat.completion",
+  "created": 1688396571,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[\n    {\"song\": \"I Will Always Love You\", \"artist\": \"Whitney Houston\"}\n]"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 22,
+    "total_tokens": 299
+  }
+}
 ```
 More to come.
