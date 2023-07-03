@@ -30,6 +30,14 @@ OPENAI_API_KEY = <key>
 
 Please make sure to replace ```<key>``` with your actual keys.
 
+<b>Spotipy</b>
+
+We use the Spotify Python library for the Spotify Web API. For detailed usage instructions and information, refer to the Spotipy official documentation, available at: https://spotipy.readthedocs.io/en/2.22.1/
+
+<b>Python-dotenv</b>
+
+We use the python-dotenv package to handle the API keys read as key-value pairs in our .env file. For further understanding and instructions on using python-dotenv, please refer to the official documentation available at the following link: https://pypi.org/project/python-dotenv/
+
 In the code you will use dictionaries to insert the code in the lines below:
 
 ```python
