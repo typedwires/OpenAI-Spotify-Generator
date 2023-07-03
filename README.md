@@ -32,7 +32,7 @@ SPOTIFY CLIENT ID <br>
 SPOTIFY CLIENT SECRET <br>
 OPENAI API KEY <br>
 
-in the following format:
+in the following format in your.env file:
 
 ```
 SPOTIFY_CLIENT_ID = <key>
