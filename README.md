@@ -2,6 +2,16 @@
 
 Project based on Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4.
 
+<b> How to run the project </b>
+
+Once the project is set up (see instructions below) in the command line, nagivate to the project and run
+
+```shell
+python app.py -p "90s and early 2000s rock love songs" -n 10
+```
+
+Where ```-p``` represents the prompt or playlist title, and ``-n`` denotes the number of songs to generate.
+
 <b>Creating your Spotify Web API to obtain Spotify Client ID and Client Secret keys</b>
 
 Follow the instructions here: https://developer.spotify.com/documentation/web-api
