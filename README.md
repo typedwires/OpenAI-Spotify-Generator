@@ -128,10 +128,19 @@ Based on the above format we write
 ```python
 playlist = json.loads(response["choices"][0]["message"]["content"])
 ```
-which prints in the following format:
+and `print(playlist)` outputs: 
 
 ```
 [{'song': "I Will Always Love You", 'artist': 'Whitney Houston'}]
+```
+The output above is then used within the Spotipy api to search for the artist/song as seen in the code below:
+
+```python
+for item in playlist:
+    artist, song = item["artist"], item["song"]
+    query = f"{song} {artist}"
+    search_results = sp.search(q=query, type="track", limit=10)
+    track_ids.append(search_results["tracks"]["items"][0]["id"])
 ```
 
 More to come.
