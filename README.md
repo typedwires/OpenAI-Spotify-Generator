@@ -20,13 +20,13 @@ OPEN_API_KEY <br>
 
 in the following format:
 
-<pre>
+```
 SPOTIFY_CLIENT_ID = <key>
 SPOTIFY_CLIENT_SECRET = <key>
 OPENAI_API_KEY = <key> 
-</pre>
+```
 
-Please make sure to replace <key> with your actual keys.
+Please make sure to replace ```<key>``` with your actual keys.
 
 In the code you will use dictionaries to insert the code in the lines below:
 
