@@ -4,7 +4,7 @@
 
 Project based on Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4.
 
-<b> How to generate the playlist </b>
+<b> Example of how to generate a Spotify playlist </b>
 
 Once the project is set up (see instructions below) in the command line, nagivate to the project and run
 
@@ -28,9 +28,9 @@ Read the instructions here: https://help.openai.com/en/articles/4936850-where-do
 
 Add your:
 
-SPOTIFY_CLIENT_ID <br>
-SPOTIFY_CLIENT_SECRET <br>
-OPEN_API_KEY <br>
+SPOTIFY CLIENT ID <br>
+SPOTIFY CLIENT SECRET <br>
+OPENAI API KEY <br>
 
 in the following format:
 
@@ -97,7 +97,7 @@ Based on the code below:
         max_tokens=400)
 ```
 
-OpenAI's api will return the output in the following JSON format (in code this the resulr of printing our ```response``` variable).
+OpenAI's api will return the output in the following JSON format (in code this the result of printing our ```response``` variable).
 
 ```json
 {
