@@ -2,7 +2,7 @@
 
 <img src="https://github.com/typedwires/OpenAI-Spotify-Generator/blob/main/playlist.png" width="800">
 
-Project based on Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4.
+Project based on [Colt Steele's Mastering OpenAI Python APIs: Unleash ChatGPT and GPT4](https://www.udemy.com/course/mastering-openai/).
 
 <b> Example of how to generate a Spotify playlist </b>
 
