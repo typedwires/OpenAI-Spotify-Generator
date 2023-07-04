@@ -18,7 +18,7 @@ Where ```-p``` represents the prompt and playlist title, and ``-n`` denotes the 
 
 Follow the instructions here: https://developer.spotify.com/documentation/web-api
 
-Also, inside your Spotify WEB API set your ```Website``` and ``Redirect URIs`` both to```http://localhost:9999```
+Inside your Spotify WEB API set your ```Website``` and ``Redirect URIs`` both to```http://localhost:9999```
 
 <b>Finding your OpenAI secret keys</b>
 
@@ -63,7 +63,7 @@ sp = spotipy.Spotify(
 )
 ```
 
-<b>Example output based our messages prompt</b>
+<b>Prompting and Output</b>
 
 Based on the code below:
 
@@ -97,7 +97,7 @@ Based on the code below:
         max_tokens=400)
 ```
 
-OpenAI's api will return the output in the following JSON format (in code this the result of printing our ```response``` variable).
+OpenAI's api will return the output in the following JSON format (in code this the result of printing out the ```response``` variable).
 
 ```json
 {
@@ -144,7 +144,16 @@ for item in playlist:
 ```
 and `search_results["tracks"]["items"][0]["id"]` will output the id for the song and then add this to the track_ids list.
 
+<b>Further explanation</b>
 
+From the code about
 
+```python
+    search_results = sp.search(q=query, type="track", limit=10)
+```
 
-More to come.
+In the code above sp.search() is called to search for tracks on Spotify that match the query string. The type="track" argument means that the search will return song tracks. limit=10 means that it will return up to 10 tracks that match the query. This assumes the returned tracks are non-empty.
+
+`track_ids.append(`) is used to add the ID of the first track returned by the search to the track_ids list. The `search_results["tracks"]["items"][0]["id"]` is accessing the ID of the first track in the returned JSON structure from the Spotify API.
+
+In summary, this code is for creating a new Spotify playlist for a user, and populating it with tracks based on openai's api queried results.
