@@ -50,7 +50,7 @@ We use the Spotify Python library for the Spotify Web API. For detailed usage in
 
 We use the python-dotenv package to handle the API keys read as key-value pairs in our .env file. For further understanding and instructions on using python-dotenv, please refer to the official documentation available at the following link: https://pypi.org/project/python-dotenv/
 
-In the code you will use dictionaries to manage our keys in the lines below:
+In the code you will use dictionaries to manage keys in the lines below:
 
 ```python
 sp = spotipy.Spotify( 
