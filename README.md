@@ -160,4 +160,4 @@ The code can be made more resilient by incorporating adequate error management. 
 
 <b>Summary</b>
 
-This code creates a new Spotify playlist and fills it with tracks determined by the results of queries made to OpenAI's API. 
+Using Spotify's APIs, this code creates a new Spotify playlist and fills it with tracks determined by the results of queries made to OpenAI's API. 
