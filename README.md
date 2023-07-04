@@ -121,7 +121,7 @@ OpenAI's api will return the output in the following JSON format (in code this t
     "total_tokens": 299
   }
 }
-````
+```
 
 Based on the above format we write
 
@@ -146,7 +146,7 @@ and `search_results["tracks"]["items"][0]["id"]` will output the id for the song
 
 <b>Further explanation</b>
 
-From the code about
+From the code above
 
 ```python
     search_results = sp.search(q=query, type="track", limit=10)
