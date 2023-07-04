@@ -146,14 +146,18 @@ and `search_results["tracks"]["items"][0]["id"]` will output the id for the song
 
 <b>Further explanation</b>
 
-From the code above
-
 ```python
     search_results = sp.search(q=query, type="track", limit=10)
 ```
 
-In the code above sp.search() is called to search for tracks on Spotify that match the query string. The type="track" argument means that the search will return song tracks. limit=10 means that it will return up to 10 tracks that match the query. This assumes the returned tracks are non-empty.
+sp.search() is called to search for tracks on Spotify that match the query string. The type="track" argument means that the search will return song tracks. limit=10 means that it will return up to 10 tracks that match the query. This assumes the returned tracks are non-empty.
 
 `track_ids.append(`) is used to add the ID of the first track returned by the search to the track_ids list. The `search_results["tracks"]["items"][0]["id"]` is accessing the ID of the first track in the returned JSON structure from the Spotify API.
 
-In summary, this code is for creating a new Spotify playlist for a user, and populating it with tracks based on openai's api queried results.
+<b>Further code improvements to be done</b>
+
+The code can be made more resilient by incorporating adequate error management. The input for the `-n` parameter should be designed to handle scenarios where the values are zero or negative. Furthermore, the functionality that searches for songs needs to be designed to properly deal with situations where there are no matching results, among other potential issues.
+
+<b>Summary</b>
+
+This code creates a new Spotify playlist and fills it with tracks determined by the results of queries made to OpenAI's API. 
